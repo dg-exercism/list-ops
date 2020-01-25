@@ -50,7 +50,6 @@ export class List {
   }
 
   foldl() {
-    throw new Error("Remove this statement and implement this function");
   }
 
   foldr() {
@@ -58,6 +57,11 @@ export class List {
   }
 
   reverse() {
-    throw new Error("Remove this statement and implement this function");
+    let aboutFace = [];
+    for (let i = this.values.length -1; i >= 0; i--) {
+      aboutFace.push(this.values[i])
+    }
+    this.values = aboutFace;
+    return this
   }
 }
